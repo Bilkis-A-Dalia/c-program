@@ -1,18 +1,17 @@
-#include <stdio.h>
-int main()  
-{  
-    int num1, num2;  
-    int sum, sub, mult;  
-    //float div; 
-    scanf("%d %d", &num1, &num2);
-    sum = num1 + num2;  
-    sub = num1 - num2;  
-    mult = num1 * num2;  
-    //div =num1/num2;
-  printf("%d + %d = %d\n", num1, num2, add(num1, num2));
-  printf("%d - %d = %d\n", num1, num2, sub(num1, num2));
-  printf("%d * %d = %d\n", num1, num2, mult(num1, num2));
- // printf("%d / %d = %.2f\n", num1, num2, div(num1, num2));
-
-  return 0;
+#include<stdio.h>
+int main()
+{
+    int a,b,sum,mns,mlt;
+    float div;
+    scanf("%d%d",&a,&b);
+    sum=a+b;
+    mns=a-b;
+    mlt=a*b;
+    div=a/b;
+    div=a/(b*1.0);
+    printf("%d + %d = %d\n",a,b,sum);
+    printf("%d - %d = %d\n",a,b,mns);
+    printf("%d * %d = %d\n",a,b,mlt);
+    printf("%d / %d = %.2f\n",a,b,div);
+    return 0;
 }
